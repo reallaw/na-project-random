@@ -1,0 +1,19 @@
+.section {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    row-gap: 16px;
+    height: max-content;
+    justify-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        row-gap: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        row-gap: 8px;
+    }
+}

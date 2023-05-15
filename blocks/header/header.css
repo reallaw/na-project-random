@@ -1,0 +1,14 @@
+.header {
+    z-index: 25;
+    position: sticky;
+    top: 0;
+    background: var(--ui-background);
+    padding: 16px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 2px solid var(--ui-borders);
+    transition: padding .175s ease-in;
+}

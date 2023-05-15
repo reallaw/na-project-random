@@ -1,0 +1,7 @@
+.popup__title {
+    font-weight: 750;
+    margin: 0;
+    color: var(--ui-title);
+    font-size: 26px;
+    text-rendering: geometricPrecision;
+}

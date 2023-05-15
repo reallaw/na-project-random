@@ -1,0 +1,14 @@
+.select__options_active {
+    display: grid;
+    row-gap: 12px;
+    overflow-y: visible;
+    animation: fadeOut .5s ease-in 1;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}

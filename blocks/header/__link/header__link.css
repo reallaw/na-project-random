@@ -1,0 +1,31 @@
+.header__link {
+    opacity: .95;
+    cursor: pointer;
+    transition: opacity .2s ease-in;
+    color: var(--ui-link);
+    text-decoration: none;
+    border: 0;
+    height: fit-content;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.1;
+    transition: opacity .2s ease-out;
+}
+
+.header__link:disabled {
+    color: var(--ui-link);
+}
+
+@media screen and (max-width: 568px) {
+    .header__link {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .header__link {
+        font-size: 12px;
+    }
+}

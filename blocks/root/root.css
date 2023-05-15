@@ -1,0 +1,23 @@
+:root {
+    --ui-background: #f7f7f7;
+    --ui-menu: #f8f8f8;
+    --ui-select: #f5f5f5;
+    --ui-borders: #EDECEA;
+    --ui-scroll: #c2c2c2;
+    --ui-opacity: .95;
+    --ui-title: #2A2A2A;
+    --ui-text: #000;
+    --ui-link: #000;
+    --ui-link-visited: #fff;
+    --ui-accent-min: rgba(32, 74, 200, .7);
+    --ui-accent: rgba(32, 74, 200, 0.8);
+    --ui-accent-max: rgba(32, 74, 200, .9);
+    --ui-selection: rgba(32, 74, 200, .25);
+    --ui-brand-red: #ff4a4f;
+    --ui-bradius: 8px;
+    --ui-all-transition: all .2s linear;
+}
+
+*::selection {
+    background: var(--ui-selection);
+}

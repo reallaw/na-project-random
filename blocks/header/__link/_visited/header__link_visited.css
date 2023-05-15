@@ -1,0 +1,7 @@
+ .header__link_visited {
+    color: var(--ui-link-visited);
+}
+
+.header__link_visited:hover {
+    color: var(--ui-link-visited-hover)
+}

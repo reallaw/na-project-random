@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Сайт Н.А.</title>
+        <meta name="author" content="Егор Крашенинин">
+        <meta name="description" content="Рандом сайта Натаван Алимовны">
+        <meta name="keywords" content="Рандом НА, Рандом NA, Натаван Алимовна, Кахраманова сайт, Кахраманова Натаван Сайт, Кахраманова Натаван Алимовна сайт, Кахраманова Н.А. Сайт, Кахраманова НА сайт, Натали Максимова Сайт, Сайт Натали Максимовой, 1200, Школа Новокосино, Новокосино, Школа 1200, Школа 1200 Математика, Школа Новоксино математика, Математический класс 1200, математический класс Новокосино, Сайт Натаван Алимовны, Сайт НА, Сайт NA, Сайт Натаван, Сайт на">
+        <meta name="robots" content="index, follow">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="language" content="Russian">
+        <meta http-equiv="expires" content="0"> 
+        <link rel="stylesheet" href="./pages/index.css">
+        <link rel="icon" href="./images/favicon.svg">
+    </head>
+<body class="body">
+    <div class="page" id="page">
+        <header class="header"> <!-- Sticky header -->
+            <div class="header__wrapper" id="site-name">
+                <h1 class="header__title">Сайт</h1>
+                <img class="header__logo" src="./images/favicon.svg" alt="Логотип сайта Н.А." >
+            </div>
+            <nav class="nav">
+                <ul class="header__list">
+                    <li class="header__list-element">
+                        <a href="https://math-natavan.com" class="header__link" visited>Главная</a>
+                    </li>
+                    <li class="header__list-element header__list-element_active">
+                        <a href="https://random.math-natavan.com" class="header__link header__link_visited" visited>Рандом</a>
+                    </li>
+                    <li class="header__list-element">
+                        <a href="#" class="header__link">
+                            Прочее <!-- !nteractive element -->
+                            <img src="./images/down-arrow.svg" alt="Иконка стрелочки вниз" class="header__image">                                                       
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__wrapper">
+                <img src="./images/menu.svg" alt="Иконка открыть меню" class="header__button" id="js-image">
+            </div>
+        </header>
+        <main class="main">
+            <div class="section"> <!-- Section 1 -->
+                <h2 class="section__title">Рандом 8 &#171;Д&#187;</h2>
+                <p class="section__paragraph">Необходимо настроить рандом, перед тем как начать.
+                </p>
+            </div>
+        </main>
+        <footer class="footer"> <!-- Footer -->
+            <p class="footer__paragraph">&copy; 2022 - 2023</p>
+        </footer>
+        <div class="popup">
+            <div class="popup__container">
+                <img src="./images/close-button.svg" alt="Иконка закрытия" class="popup__button" id="js-close-button">
+                <div class="popup__wrapper">
+                    <div class="popup__container">
+                        <h2 class="popup__title">Настройки рандома</h2>
+                        <img src="./images/settings.svg" alt="Иконка настроек" class="popup__image">
+                    </div>
+                    <ul class="popup__items">
+                        <li class="popup__item">
+                            <p class="popup__paragraph">Выберите класс из предложенных вариантов, нажав на интерактивный селект.</p>
+                            <div class="select" id="js-select-class">
+                                <div class="select__container">
+                                    <span class="select__span">8 &#171;Д&#187;</span>
+                                </div>
+                                    <ul class="select__options">
+                                        <li class="select__option">
+                                            <input type="radio" class="select__input" id="NdCW" name="js-class">
+                                            <label for="NdCW" class="select__label">5 &#171;Ж&#187;</label>
+                                        </li>
+                                        <li class="select__option">
+                                            <input type="radio" class="select__input" id="NtCW" name="js-class">
+                                            <label for="NtCW" class="select__label">6 &#171;Ж&#187;</label>
+                                        </li>
+                                        <li class="select__option">
+                                            <input type="radio" class="select__input" id="NtCV" name="js-class">
+                                            <label for="NtCV" class="select__label">6 &#171;Е&#187;</label>
+                                        </li>
+                                        <li class="select__option">
+                                            <input type="radio" class="select__input" id="N9CY" name="js-class">
+                                            <label for="N9CY" class="select__label">7 &#171;И&#187;</label>
+                                        </li>
+                                        <li class="select__option">
+                                            <input type="radio" class="select__input" id="ONCU" name="js-class">
+                                            <label for="ONCU" class="select__label">8 &#171;Д&#187;</label>
+                                        </li>
+                                    </ul>
+                            </div>
+                        </li>
+                        <li class="popup__item">
+                            <p class="popup__paragraph">Выберите отсутствующих из предложенных вариантов, нажав на интерактивный селект.</p>
+                            <div class="select" id="js-select-absent">
+                                <div class="select__container">
+                                    <span class="select__span">Нет отсутствующих</span>
+                                </div>
+                                    <ul class="select__options">
+                                        <li class="select__option">
+                                            <input type="checkbox" class="select__input" id="" name="js-absent">
+                                            <label for="" class="select__label">Нет отсутствующих</label>
+                                        </li>
+                                    </ul>
+                            </div>
+                        </li>
+                        <li class="popup__item">
+                            <p class="popup__paragraph">Выберите исключить повторения или нет, нажав на интерактивный селект.</p>
+                            <div class="select" id="js-select-repeats">
+                                <div class="select__container">
+                                    <span class="select__span">Да</span>
+                                </div>
+                                    <ul class="select__options">
+                                        <li class="select__option">
+                                            <input type="radio" class="select__input" id="0JTQsA==" name="js-repeats">
+                                            <label for="0JTQsA==" class="select__label">Да</label>
+                                        </li>
+                                        <li class="select__option">
+                                            <input type="radio" class="select__input" id="0J3QtdGC" name="js-repeats">
+                                            <label for="0J3QtdGC" class="select__label">Нет</label>
+                                        </li>
+                                    </ul>
+                            </div>
+                        </li>
+                        <li class="popup__item">
+                            <p class="popup__paragraph">Выберите скорость генерации, нажав на интерактивный селект.</p>
+                            <div class="select" id="js-select-speed">
+                                <div class="select__container">
+                                    <span class="select__span">Нормально</span>
+                                </div>
+                                    <ul class="select__options">
+                                        <li class="select__option">
+                                            <input type="radio" class="select__input" id="0JzQtdC00LvQtdC90L3Qvg==" name="js-speed">
+                                            <label for="0JzQtdC00LvQtdC90L3Qvg==" class="select__label">Медленно</label>
+                                        </li>
+                                        <li class="select__option">
+                                            <input type="radio" class="select__input" id="0J3QvtGA0LzQsNC70YzQvdC+" name="js-speed">
+                                            <label for="0J3QvtGA0LzQsNC70YzQvdC+" class="select__label">Нормально</label>
+                                        </li>
+                                        <li class="select__option">
+                                            <input type="radio" class="select__input" id="0JHRi9GB0YLRgNC+" name="js-speed">
+                                            <label for="0JHRi9GB0YLRgNC+" class="select__label">Быстро</label>
+                                        </li>
+                                    </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="popup__button" id="js-save-button">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+    <script src="./scripts/main.js" type="module"></script>
+    <template id="absent">
+        <li class="select__option">
+            <input type="radio" class="select__input" id="" name="js-absent">
+            <label for="" class="select__label"></label>
+        </li>
+    </template>
+</body>
+</html>

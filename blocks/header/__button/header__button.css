@@ -1,0 +1,13 @@
+.header__button {
+    appearance: none;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    height: 28px;
+    width: 100%;
+    transition: all .2s ease-in;
+}
+
+.header__button:Hover {
+    opacity: .7;
+}

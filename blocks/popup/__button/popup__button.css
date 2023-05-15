@@ -1,0 +1,34 @@
+.popup__button {
+    appearance: none;
+    border: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 18px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: opacity .2s ease-in;
+}
+
+.popup__button:hover {
+    opacity: .85;
+}
+
+#js-close-button {
+    position: absolute;
+    top: -48px;
+    right: -48px;
+    width: 32px;
+}
+
+#js-save-button {
+    border-radius: var(--ui-bradius);
+    background-color: var(--ui-accent-min);
+    color: white;
+    min-height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    #js-save-button {
+        min-height: 40px;
+    }
+}

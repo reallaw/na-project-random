@@ -1,0 +1,17 @@
+.select__container {
+    padding: 6px 12px;
+    box-sizing: border-box;
+}
+
+.select__container::after {
+    content: '';
+    background: url(../../../images/down-arrow.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 16px;
+    height: 50%;
+    right: 12px;
+    top: 20px;
+}

@@ -1,0 +1,17 @@
+.popup__wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 20px;
+    top: 0;
+    right: 0;
+    height: 468px;
+    width: 80vw;
+    max-width: 568px;
+    min-width: 200px;
+    background: var(--ui-menu);
+    border-radius: 12px;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, .1);
+    overflow-y: scroll;
+    box-sizing: border-box;
+}

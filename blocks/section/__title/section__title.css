@@ -1,0 +1,28 @@
+.section__title {
+    margin: 0;
+    text-rendering: geometricPrecision;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.05;
+    color: var(--ui-title);
+    opacity: var(--ui-opacity);
+}
+
+@media screen and (max-width: 768px) {
+    .section__title {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .section__title {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .section__title {
+        font-size: 22px;
+    }
+}

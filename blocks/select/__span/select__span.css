@@ -1,0 +1,22 @@
+.select__span {
+    width: max-content;
+    font-weight: 500;
+    margin: 0;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.1;
+    color: var(--ui-accent);
+    opacity: var(--ui-opacity);
+}
+
+@media screen and (max-width: 768px) {
+    .select__span {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .select__span {
+        font-size: 14px;
+    }
+}

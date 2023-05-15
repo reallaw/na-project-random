@@ -1,0 +1,10 @@
+.header__image {
+    width: 12px;
+    height: 100%;
+    background-color: transparent;
+    transition: opacity .2s ease-out;
+}
+
+.header__image:hover {
+    opacity: .7;
+}
