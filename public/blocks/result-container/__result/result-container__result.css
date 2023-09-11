@@ -1,0 +1,29 @@
+.result-container__result {
+    font-weight: 800;
+    font-size: 48px;
+    font-family: 'Mulish', sans-serif; /* font for result !!!DON'T CHANGE THIS STRING!!! */
+    background: radial-gradient(#141414 0.75px, transparent 3.75px);
+    background-size: 3px 3px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    pointer-events: none;
+    transition: transform 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+    .result-container__result {
+        font-size: 42px;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .result-container__result {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .result-container__result {
+        font-size: 32px;
+    }
+}

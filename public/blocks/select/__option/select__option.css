@@ -1,0 +1,21 @@
+.select__option {
+    position: relative;
+    box-sizing: border-box;
+    padding: 12px 10px;
+    border-radius: var(--ui-bradius);
+    cursor: pointer;
+}
+
+.select__option:hover {
+    background-color: var(--ui-accent-min);
+}
+
+.select__option:hover label {
+    color: white;
+}
+
+@media screen and (max-width: 468px) {
+    .select__option {
+        padding: 10px 10px;
+    }
+}

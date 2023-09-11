@@ -1,0 +1,30 @@
+.settings__button {
+    appearance: none;
+    border: 0;
+    padding: 0;
+    height: 48px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    background: var(--ui-button);
+    color: white;
+    border-radius: 12px;
+    transition: all .2s linear;
+}
+
+.settings__button:hover:not(:disabled) {
+    background: var(--ui-button-hover);
+}
+
+.settings__button:disabled {
+    cursor: not-allowed;
+}
+
+@media screen and (max-width: 468px) {
+    .settings__button {
+        font-size: 16px;
+        height: 42px;
+    }
+}

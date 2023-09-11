@@ -1,0 +1,8 @@
+.header__button_theme {
+    width: 32px;
+    height: 32px;
+    background-color: var(--ui-accent);
+    border-radius: var(--ui-bradius);
+    background-image: url('../../../../images/change-theme.svg');
+    background-size: cover;
+}

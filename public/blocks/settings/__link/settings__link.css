@@ -1,0 +1,38 @@
+.settings__link {
+    display: none;
+    cursor: pointer;
+    transition: transform .375s linear;
+}
+
+#vertical-next {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    #horisontal-next {
+        display: inline-block;
+    }
+
+    #vertical-next {
+        display: none;
+    }
+
+    .settings__link:hover {
+        transform: translateX(4px);
+    }
+}
+
+@media screen and (max-width: 468px) { /* due to menus grid edits */
+    #horisontal-next {
+        display: none;
+    }
+
+    #vertical-next {
+        display: inline-block;
+    }
+
+    .settings__link:hover {
+        transform: none;
+        transition: transform .25s ease;
+    }
+}

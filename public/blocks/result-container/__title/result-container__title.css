@@ -1,0 +1,22 @@
+.result-container__title {
+    height: max-content;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.025em;
+    
+    color: var(--ui-title);
+    
+    text-rendering: geometricPrecision;
+}
+
+@media screen and (max-width: 468px) {
+    .result-container__title {
+        font-size: 20px;
+    }
+}

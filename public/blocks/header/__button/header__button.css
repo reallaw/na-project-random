@@ -1,0 +1,11 @@
+.header__button {
+    appearance: none;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    transition: opacity .1s ease-in;
+}
+
+.header__button:Hover {
+    opacity: .7;
+}

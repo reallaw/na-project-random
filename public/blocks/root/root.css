@@ -1,0 +1,31 @@
+:root {
+    --ui-background: #f7f7f7;
+    --ui-alternate-bg: #2f2f2f;
+    --ui-notice: #efefef;
+    --ui-containers: #f6f6f6;
+    --ui-borders: #EDECEA;
+    --ui-scroll: #c2c2c2;
+    --ui-opacity: 1;
+    --ui-title: #262626;
+    --ui-text: #141414;
+    --ui-light-text: #424242;
+    --ui-link: #000;
+    --ui-link-visited: #fff;
+    --ui-input: #e7e7e7;
+    --ui-input-hover: #eae9e9;
+    --ui-button: #387ce9;
+    --ui-button-hover: #326ecf;
+    --ui-button-text: #ffffff;
+    --ui-accent-min: #5092ff;
+    --ui-accent: rgba(32, 74, 200, 0.8);
+    --ui-measured-accent: #4b90ff;
+    --ui-accent-max: #1f5edb;
+    /* --ui-selection: rgba(32, 74, 200, 0.475); */
+    --ui-bradius: 8px;
+    --ui-bradius-max: 12px;
+    --ui-bg-transition: background .2s ease-in;
+}
+
+/* *::selection {
+    background: var(--ui-selection);
+} */

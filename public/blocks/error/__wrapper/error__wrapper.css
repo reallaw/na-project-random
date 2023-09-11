@@ -1,0 +1,11 @@
+.error__wrapper {
+    display: flex;
+    row-gap: 8px;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    background: var(--ui-notice);
+    width: 300px;
+    border-radius: var(--ui-bradius);
+}

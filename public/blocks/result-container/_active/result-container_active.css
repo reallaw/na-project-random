@@ -1,0 +1,30 @@
+@media screen and (max-width: 1024px) {
+    .result-container_active {
+        right: 380px;
+        z-index: 100;
+    }
+}
+
+@media screen and (max-width: 824px) {
+    .result-container_active {
+        right: 300px;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .result-container_active {
+        right: 272.5px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .result-container_active {
+        right: 240px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .result-container_active {
+        right: 0;
+    }
+}

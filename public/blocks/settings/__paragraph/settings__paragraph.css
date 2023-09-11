@@ -1,0 +1,25 @@
+.settings__paragraph {
+    margin: 0;
+    font-size: 18px;
+    margin-right: 12px;
+    width: 182px;
+}
+
+@media screen and (max-width: 768px) {
+    .settings__paragraph {
+        width: 164px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .settings__paragraph {
+        font-size: 16px;
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 396px) {
+    .settings__paragraph {
+        width: 120px;
+    }
+}

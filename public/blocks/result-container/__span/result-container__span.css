@@ -1,0 +1,15 @@
+.result-container__span {
+    margin: 0;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 525;
+    letter-spacing: 0.025em;
+        
+    color: var(--ui-light-text);
+}
+
+@media screen and (max-width: 468px) {
+    .result-container__span {
+        font-size: 16px;
+    }
+}

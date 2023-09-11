@@ -1,0 +1,32 @@
+@media screen and (max-width: 1024px) {
+    .settings_active {
+        left: 380px;
+    }
+}
+
+@media screen and (max-width: 824px) {
+    .settings_active {
+        left: 300px;
+        z-index: 0;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .settings_active {
+        left: 272.5px;
+        z-index: 0;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .settings_active {
+        left: 240px;
+        z-index: 0;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .settings_active {
+        left: 0;
+    }
+}

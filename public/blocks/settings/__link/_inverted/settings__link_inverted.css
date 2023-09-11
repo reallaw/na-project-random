@@ -1,0 +1,17 @@
+.settings__link_inverted {
+    transform: scale(-1, 1);
+}
+
+.settings__link_inverted:hover {
+    transform: scale(-1, 1) translateX(4px);
+}
+
+@media screen and (max-width: 468px) { /* due to menus grid edits */
+    .settings__link_inverted {
+        transform: scale(-1, -1);
+    }
+
+    .settings__link_inverted:hover {
+        transform: scale(-1, -1);
+    }
+}

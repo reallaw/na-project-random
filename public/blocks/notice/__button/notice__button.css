@@ -1,0 +1,25 @@
+.notice__button {
+    appearance: none;
+    border: 0;
+    background: var(--ui-alternate-bg);
+    font-family: inherit;
+    font-size: 14px;
+    color: white;
+    padding: 12px 24px;
+    border-radius: var(--ui-bradius);
+    height: fit-content;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .notice__button {
+        font-size: 12px;
+        padding: 10px 20px;
+    }   
+}
+
+@media screen and (max-width: 468px) {
+    .notice__button {
+        font-size: 12px;
+    }   
+}

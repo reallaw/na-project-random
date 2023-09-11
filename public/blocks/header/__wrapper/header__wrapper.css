@@ -1,0 +1,26 @@
+.header__wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    align-items: center;
+}
+
+#logged {
+    column-gap: 6px;
+}
+
+#site-name {
+    column-gap: 10px;
+}
+
+@media screen and (max-width: 468px) {
+    .header__wrapper {
+        column-gap: 4px;
+    }  
+}
+
+@media screen and (max-width: 568px) {
+    #site-name {
+        column-gap: 0;
+    }
+}

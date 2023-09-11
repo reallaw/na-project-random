@@ -1,0 +1,12 @@
+.notice__paragraph {
+    text-rendering: geometricPrecision;
+    word-spacing: -0.25px;
+    font-size: 14px;
+    color: var(--ui-text);
+}
+
+@media screen and (max-width: 768px) {
+    .notice__paragraph {
+        font-size: 12px;
+    }
+}

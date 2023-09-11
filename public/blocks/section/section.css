@@ -1,0 +1,30 @@
+.section {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    row-gap: 24px;
+    height: max-content;
+    justify-items: center;
+    width: max-content;
+    column-gap: 32px;
+    align-self: center;
+    margin-top: 24px;
+}
+
+#settings {
+    grid-area: settings;
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        row-gap: 8px;
+        margin-top: 16px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .section {
+        position: relative;
+        grid-template-columns: max-content;
+        row-gap: 0;
+    }
+}

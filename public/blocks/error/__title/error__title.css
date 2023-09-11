@@ -1,0 +1,10 @@
+.error__title {
+    font-weight: 700;
+    font-size: 48px;
+    font-family: 'Mulish', sans-serif; /* font for result !!!DON'T CHANGE THIS STRING!!! */
+    background: radial-gradient(#141414 0.75px, transparent 3.75px);
+    background-size: 3px 3px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}

@@ -1,0 +1,20 @@
+.error {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: none;
+    background: rgba(20, 20, 20 , .8);
+}
+
+@media screen and (max-width: 356px) {
+    .error {
+        font-family: 'Roboto Flex', 'Arial', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 10000;
+    }
+}

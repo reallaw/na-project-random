@@ -1,0 +1,17 @@
+.header__span {
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 600;
+    padding: 8px;
+    color: var(--ui-role);
+    background: var(--ui-blackout-background);
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+    .header__span  {
+        font-size: 10px;
+        padding: 6px;
+    }
+}

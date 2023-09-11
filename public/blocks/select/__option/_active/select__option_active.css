@@ -1,0 +1,4 @@
+.select__option_active {
+    background-color: var(--ui-accent-min);
+    color: white;
+}

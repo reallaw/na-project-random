@@ -1,0 +1,5 @@
+.footer {
+    display: flex;
+    column-gap: 6px;
+    flex-shrink: 0;
+}

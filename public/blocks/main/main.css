@@ -1,0 +1,19 @@
+.main {
+    margin: 32px 0;
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    column-gap: 48px;
+}
+
+@media screen and (max-width: 468px) {
+    .main {
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .main {
+        margin: 16px 0;
+    }
+}

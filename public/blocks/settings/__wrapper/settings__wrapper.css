@@ -1,0 +1,6 @@
+.settings__wrapper {
+    display: flex;
+    width: max-content;
+    justify-content: center;
+    align-items: center;
+}

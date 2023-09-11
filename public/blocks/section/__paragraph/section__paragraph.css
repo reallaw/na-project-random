@@ -1,0 +1,23 @@
+.section__paragraph {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: var(--ui-text);
+    opacity: var(--ui-opacity);
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .section__paragraph {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .section__paragraph {
+        font-size: 14px;
+    }
+}
