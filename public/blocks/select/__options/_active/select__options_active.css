@@ -1,7 +1,7 @@
 .select__options_active {
     max-height: 220px;
     display: grid;
-    row-gap: 10px;
+    row-gap: 8px;
     overflow-y: scroll;
     animation: fadeOut .25s linear 1;
 }

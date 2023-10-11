@@ -1,0 +1,15 @@
+.preloader {
+    z-index: 9999;
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.2);
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    transition: opacity .1s ease-out;
+}

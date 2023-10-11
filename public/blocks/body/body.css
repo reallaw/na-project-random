@@ -19,31 +19,3 @@
     padding: 4px 10px;
   }
 }
-
-::-webkit-scrollbar {
-  cursor: grab !important;
-  width: 20px;
-  background-color: transparent;
-}
- 
- ::-webkit-scrollbar {
-  cursor: grab !important;
-}
-
-::-webkit-scrollbar-thumb {
-  cursor:grab !important;
-  background-color: var(--ui-scroll);
-  border-radius: 10px;
-  border: 6px solid rgba(0, 0, 0, 0);
-  background-clip: padding-box;
-}
-
-@media screen and (max-width: 768px) {
-  ::-webkit-scrollbar {
-    width: 16px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    border-radius: 0;
-  }
-}

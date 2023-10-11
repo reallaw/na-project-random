@@ -6,17 +6,19 @@
     row-gap: 16px;
     padding: 20px;
     background: var(--ui-containers);
+    background-size: 103%;
+    background-position: center center;
     box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.1);
     border-radius: var(--ui-bradius-max);
     box-sizing: border-box;
     position: relative;
     right: 0;
-    transition: right 1s ease-out;
+    transition: right 1s ease-out, background .1s ease-out;
 }
 
 @media screen and (max-width: 1024px) {
     .result-container {
-        right: 120px;
+        right: 107.5px;
         position: relative;
     }
 }
@@ -40,7 +42,7 @@
         width: 416px;
         padding: 12px;
         right: 207.5px;
-        transition: right .5s ease-out;
+        transition: right .3s ease-out, background .1s ease-out;
     }
 }
 

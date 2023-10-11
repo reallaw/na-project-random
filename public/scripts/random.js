@@ -16,19 +16,24 @@ export default class Random { // защищено GNU AFFERO GENERAL PUBLIC LICE
     };
 
     async _startGenerating(button, selectClass, selectAbsents, selectRepeats, selectSpeed, resultSpan, optionInput) {
+        let student;
         const btn = button;
+        const preloader = document.querySelector('.preloader');
         const resultEl = document.querySelector(resultSpan);
         const settingsContainer = document.querySelector('.settings');
         const resultContainer = document.querySelector('.result-container');
+        const resultPicture = resultContainer.querySelector('.result-container__picture');
         const selectedClass = Array.from(this._checkActiveOptions(selectClass, optionInput));
         const selectedAbsents = Array.from(this._checkActiveOptions(selectAbsents, optionInput));
         const selectedRepeats = Array.from(this._checkActiveOptions(selectRepeats, optionInput))[0].id;
         const selectedSpeed = Array.from(this._checkActiveOptions(selectSpeed, optionInput))[0].id;
-        const list = await fetch('link' + selectedClass[0].id + '.json').then((response) => {
+        const list = await fetch('https://secure.math-natavan.com/students/' + selectedClass[0].id + '.json').then((response) => {
             return response.json();
         }).then((body) => {
             return body;
-        });
+        }).catch((err) => {console.error('🦣 Critical trouble in module: failed to fetch.')})
+
+        resultPicture.classList.remove(resultPicture.classList[0] + '_active');
 
         const ignoreId = selectedAbsents.map((item, index) => {
             const numberItem = Number(item.id.replace(/[^0-9]/g, ""));
@@ -48,11 +53,11 @@ export default class Random { // защищено GNU AFFERO GENERAL PUBLIC LICE
             // nothing
         };
         if (selectedSpeed == 'slow') {
-            var speedMs = 107.5;
+            var speedMs = 80;
         } else if (selectedSpeed == 'normal') {
-            var speedMs = 75;
+            var speedMs = 60;
         } else {
-            var speedMs = 37.5;
+            var speedMs = 40;
         };
 
         const newList = list.filter((item, index) => {
@@ -103,15 +108,28 @@ export default class Random { // защищено GNU AFFERO GENERAL PUBLIC LICE
         }; // typeline function
 
         let randex = Math.floor(Math.random() * newList.length); // random index
+        let path;
 
         if (newList.length != 0) {
             randex = list.findIndex(item => item.surname === newList[randex].surname && item.name === newList[randex].name);
+            student = list[randex];
+            if (speedMs > 50) {
+                preloader.classList.add('preloader_active');
+                path = `url('https://secure.math-natavan.com/assets/${student.path}')`;
+                await sleep(500);
+                resultPicture.setAttribute('style', 'background-image: ' + path);
+                resultPicture.classList.add(resultPicture.classList[0] + '_active');
+                preloader.classList.remove('preloader_active');
+            };
+            typeText(student.name + ' ' + student.surname, resultEl); // type thisRandom human
             localStorage.setItem('list', selectedClass[0].id);
             localStorage.setItem('listSkip', listAbsent);
-            typeText(list[randex].name + ' ' + list[randex].surname, resultEl); // type thisRandom human
             listAbsent.push(randex);
             localStorage.setItem('listSkip', listAbsent);
         } else {
+            if (preloader.classList.contains('preloader_active')) {
+                preloader.classList.remove('preloader_active');
+            };
             typeText('Никого нет в списке! :)', resultEl); // type thisRandom human
             btn.setAttribute('disabled', '');
         };

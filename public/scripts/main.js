@@ -3,7 +3,7 @@ import Select from './select.js';
 import Random from './random.js';
 import Menus from './menus.js';
 
-console.log('Pre-release ver. 1.25 (code and design edits - release)');
+console.log('Stable ver. 1.5 (code and style edits)');
 
 localStorage.clear('list', '');
 localStorage.clear('listSkip', '');

@@ -4,8 +4,8 @@
     font-size: 18px;
     font-weight: 525;
     letter-spacing: 0.025em;
-        
     color: var(--ui-light-text);
+    z-index: 50;
 }
 
 @media screen and (max-width: 468px) {

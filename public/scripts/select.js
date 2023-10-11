@@ -66,6 +66,8 @@ export default class Select { // защищено GNU AFFERO GENERAL PUBLIC LICE
             }
         }
         if (evtTarget.id.includes('list')) {
+            const thisClass = evtTarget.parentNode.querySelector('.select__label').textContent;
+            document.querySelector('.main__title').textContent = 'Рандом' + ' ' + thisClass;
             this._loadOptions(evtTarget.id, optionTemplate, optionClass);
         };
         if (victimItem == null) {
@@ -74,7 +76,7 @@ export default class Select { // защищено GNU AFFERO GENERAL PUBLIC LICE
     };
 
     async _loadOptions(id, optionTemplate, optionClass) {
-        const list = await fetch('link' + id + '.json').then((response) => {
+        const list = await fetch('https://secure.math-natavan.com/students/' + id + '.json').then((response) => {
             return response.json();
         }).then((body) => {
             return body;

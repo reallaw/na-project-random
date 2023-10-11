@@ -1,0 +1,4 @@
+.preloader_active {
+    opacity: 1;
+    pointer-events: visible;
+}
